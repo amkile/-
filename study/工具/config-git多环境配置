@@ -1,0 +1,15 @@
+
+# github
+Host github.com
+Port 22
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile C:/Users/Administrator/.ssh/github_rsa
+User yang1242769896@outlook.com
+ 
+# yazuo
+Host git.yazuosoft.com
+HostName git.yazuosoft.com
+PreferredAuthentications publickey
+IdentityFile C:/Users/Administrator/.ssh/yazuo_rsa
+User yangguolong@yazuo.com

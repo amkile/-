@@ -1,0 +1,7 @@
+热部署
+一、
+sudo npm install -g supervisor  #安装
+supervisor app.js  #启动
+二、
+sudo npm -g install hotcode  #安装
+hotnode app.js  #启动

@@ -1,0 +1,24 @@
+1、git配置远程地址
+
+git remote add origin url ，其中url为远程仓库地址。
+
+
+
+2、git删除远程地址
+
+git remote rm origin
+
+
+
+查看远程仓库地址信息
+
+git remote -v 
+
+git rm -r --cached .删除add的文件
+
+git reset 取消放到暂存区的文件 这个是commit之后的
+git reset HEAD filename ：回退文件，将文件从暂存区回退到工作区 　
+也可以使用 git reset filename
+
+
+git reset --hard //commit回退

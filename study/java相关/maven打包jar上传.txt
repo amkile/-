@@ -1,0 +1,6 @@
+
+mvn install:install-file -Dfile=C:\Users\Administrator\Desktop\SecurityHelper-1.0.0.jar -DgroupId=SecurityHelper -DartifactId=SecurityHelper -Dversion=1.0.0 -Dpackaging=jar -DgeneratePom=true
+
+ mvn deploy:deploy-file -DgroupId=SecurityHelper -DartifactId=SecurityHelper -Dversion=1.0.0 -Dpackaging=jar -Dfile=D:\maven\report\SecurityHelper\SecurityHelper\1.0.0\SecurityHelper-1.0.0.jar -Durl=http://10.169.0.215:8081/nexus/content/repositories/third-party -DrepositoryId=third-party
+
+mvn deploy:deploy-file -Dmaven.test.skip=true -Dfile=D:\maven\report\SecurityHelper\SecurityHelper\1.0.0\SecurityHelper-1.0.0.jar -DgroupId=SecurityHelper -DartifactId=SecurityHelper -Dversion=10.0.0-SNAPSHOT -Dpackaging=jar -DrepositoryId=nexus -Durl=http://nexus.yazuosoft.com/nexus/content/groups/public-all/

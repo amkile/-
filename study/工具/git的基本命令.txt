@@ -25,7 +25,16 @@ git reset commit_id
 
 注意，仅仅是撤回commit操作，您写的代码仍然保留。
 
- 
+git log 查看提交
+
+ //添加git跟踪文件，stage操作
+$git add readme.txt  
+//提交到本地分支
+$git commit -m xxx
+//查看当前git工作状态，可以看到未跟踪文件，已跟踪未stage文件，已stage可commit文件  
+$git status    
+//查看某文件的差异，只能查看            
+$ git diff readme.txt  
 
  
 

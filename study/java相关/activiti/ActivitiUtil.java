@@ -14,6 +14,7 @@ import org.activiti.engine.impl.pvm.process.ActivityImpl;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.Execution;
 import org.activiti.engine.runtime.ExecutionQuery;
+import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.activiti.engine.task.TaskQuery;
 import org.apache.commons.lang.StringUtils;
@@ -160,6 +161,10 @@ public class ActivitiUtil {
         return getTaskUserNode(activities, null);
     }
 
+    public List<ActivityImpl> getActivityImpl(StringBuilder procInstId){
+        ProcessInstance p = runtimeService.createProcessInstanceQuery().processInstanceId(procInstId.toString()).singleResult();
+        return getActivityImpl(p.getProcessDefinitionId());
+    }
     // 获取流程定义的所有节点信息
     public List<ActivityImpl> getActivityImpl(String defineId) {
         ProcessDefinition definition = repositoryService.createProcessDefinitionQuery().
